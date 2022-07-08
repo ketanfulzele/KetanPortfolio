@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "ISO-8859-1";
 
 
@@ -26,4 +27,34 @@ header .header-content{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+=======
+@charset "ISO-8859-1";
+
+
+
+body {
+    background-color: rgb(230, 229, 229);
+}
+
+h1 , h2 , h3 , h4 , h6 , h5 {
+    color: #000;
+}
+
+header{
+    margin-right: 0px;
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url('../images/header_w.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+header .header-content{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+>>>>>>> f28ccc2e373ccc76357995993c26106fd2928b60
 }
