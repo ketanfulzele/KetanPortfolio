@@ -372,42 +372,52 @@
 
 		<div class="container">
 
-			<div class="row mx-auto filter-container">
-				<div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3"
+			<div class="row mx-auto filter-container box-container ">
+				<div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3 "
 					data-category="1,2,3,all" data-sort="value">
-					<div>
+					<div class="box">
 						<img src="images/w2.jpg" class="img-fluid" alt="sample" />
+					<!--   	<div class ="info">
+							<h3>Gaming</h3>
+							<p>loremjdjdjdjsksejhuh jbdkkdhu dhssnseur tsjska tyeeiek hdgethj ncjjvdt mndske tangdfi</p>
+							<button class="btn btn-succes">Show</button>
+						</div>    -->
 					</div>
 				</div>
 				<div
 					class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3 "
 					data-category="2,1" data-sort="value">
-					<div>
+					<div class="box">
 						<img src="images/w3.jpg" class="img-fluid" alt="sample" />
+						
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3"
 					data-category="3,1" data-sort="value">
-					<div>
+					<div class="box">
 						<img src="images/w4.jpg" class="img-fluid" alt="sample" />
+						
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3"
 					data-category="4,2" data-sort="value">
-					<div>
+					<div class="box">
 						<img src="images/w5.jpg" class="img-fluid" alt="sample" />
+						
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3"
 					data-category="4,2" data-sort="value">
-					<div>
+					<div class="box">
 						<img src="images/w6.jpg" class="img-fluid" alt="sample" />
+						
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper mb-3"
 					data-category="4,2" data-sort="value">
-					<div>
+					<div class="box">
 						<img src="images/w7.jpg" class="img-fluid" alt="sample" />
+						
 					</div>
 				</div>
 			</div>

@@ -23,7 +23,6 @@
 <!-- for animation effect  -->
 <link rel="stylesheet" href="lib/animate.css">
 
-
 </head>
 
 <body>
@@ -43,8 +42,7 @@
 					<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
-					<li class="nav-item"><a href=/ketan/feedbacklist
-						class="nav-link">Feedback's</a></li>
+					<li class="nav-item"><a href="/feedbacklist" class="nav-link">Feedback's</a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,28 +61,28 @@
 		</div>
 	</header>
 	<section>
-
 		<div class=" container mt-2 mb-2 rounded">
 			<ul class="list-group">
-
-				<%
-				int index = 1;
-				%>
+				<%!int index = 1;%>
 				<c:forEach items="${feedbacks}" var="feedback">
 
 
-					<li class="list-group-item" >
+					<li class="list-group-item">
 						<h3>${ feedback.name }</h3>
 						<h6 class="text-muted">-${ feedback.location }</h6>
 						<h6>${ feedback.email }</h6>
 						<h5>${ feedback.message }</h5>
+						<form action="/deletefeedback" method="post">
+							<input type="hidden" id="hidden_name" name="name"	value="${ feedback.name }"> 
+							<input type="hidden" name="email" value="${ feedback.email }">
+							<input type="hidden" name="location" value="${ feedback.location}">
+							 <input type="hidden"  name="message" value="${ feedback.message }">
+							<button class="btn btn-danger feedback-btn"
+								id="delete-<%=index++%>" style="width: 100px;">Delete</button>
+						</form>
+
 					</li>
-
-
-
 				</c:forEach>
-
-
 			</ul>
 		</div>
 
@@ -117,7 +115,6 @@
 			</div>
 		</div>
 	</footer>
-
 	<script src="lib/jquery-3.6.0.min.js"></script>
 	<script src="lib/js/bootstrap.min.js"></script>
 	<script src="lib/jquery.waypoints.js"></script>
@@ -128,6 +125,7 @@
 		crossorigin="anonymous"></script>
 	<script src="js/app.js"></script>
 	<script src="lib/typed.js"></script>
+
 </body>
 
 </html>

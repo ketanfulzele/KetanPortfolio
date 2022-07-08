@@ -1,8 +1,5 @@
 package com.ketan.spring.demo.controller;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,19 +73,19 @@ public class FeedbackController {
 		return modelAndView;
 	}
 
-	@RequestMapping(value = "savefeedback", method = RequestMethod.POST)
+	@RequestMapping(value = "/savefeedback", method = RequestMethod.POST)
 	public String savefeedback(@ModelAttribute("feedback") Feedback feedback, ModelMap model) {
 		Feedback result = service.create(feedback);
 		return "index";
 	}
 
 	@RequestMapping(value = "/deletefeedback", method = RequestMethod.POST)
-	public @ResponseBody String deletefeedback(@RequestParam("id") Long id) {
-		boolean result = service.delete(id);
-		if (result) {
-			return "user feedback deleted succesfully ";
-		}
-		return "User is not present in the list ";
+	public String deletefeedback(@ModelAttribute("feedback") Feedback feedback  ) {
+		boolean result = service.delete(feedback);
+//		if (result) {
+//			return "FeedbackList";
+//		}
+		return "Feedback_deleted";
 	}
 
 }
